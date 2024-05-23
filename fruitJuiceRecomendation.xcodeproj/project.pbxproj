@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94741BF52BFD9F4E00EF492E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741BF42BFD9F4E00EF492E /* SplashScreenViewController.swift */; };
 		94741BF82BFDD16600EF492E /* showSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741BF72BFDD16600EF492E /* showSheet.swift */; };
 		94741BFD2BFDF0C100EF492E /* FruitClassification 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 94741BFC2BFDF0C100EF492E /* FruitClassification 2.mlmodel */; };
 		94741C012BFE04EF00EF492E /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741C002BFE04EF00EF492E /* Classifier.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		94741BF42BFD9F4E00EF492E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		94741BF72BFDD16600EF492E /* showSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showSheet.swift; sourceTree = "<group>"; };
 		94741BFC2BFDF0C100EF492E /* FruitClassification 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "FruitClassification 2.mlmodel"; path = "../../../imageClassification/FruitClassification 2.mlmodel"; sourceTree = "<group>"; };
 		94741C002BFE04EF00EF492E /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
@@ -51,7 +49,9 @@
 		94741BF62BFD9F5800EF492E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				94741BF42BFD9F4E00EF492E /* SplashScreenViewController.swift */,
+				94741C002BFE04EF00EF492E /* Classifier.swift */,
+				94741C042BFE056E00EF492E /* ImageClassifier.swift */,
+				94741C062BFE058C00EF492E /* ImagePicker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,9 +89,6 @@
 				949F32492BFC573000220FDC /* View */,
 				949F323E2BFC563800220FDC /* Assets.xcassets */,
 				949F323C2BFC563600220FDC /* ContentView.swift */,
-				94741C002BFE04EF00EF492E /* Classifier.swift */,
-				94741C042BFE056E00EF492E /* ImageClassifier.swift */,
-				94741C062BFE058C00EF492E /* ImagePicker.swift */,
 				949F32402BFC563800220FDC /* Preview Content */,
 			);
 			path = fruitJuiceRecomendation;
@@ -193,7 +190,6 @@
 				94741BFD2BFDF0C100EF492E /* FruitClassification 2.mlmodel in Sources */,
 				949F324F2BFC584900220FDC /* mainCameraViewPage.swift in Sources */,
 				94741C072BFE058C00EF492E /* ImagePicker.swift in Sources */,
-				94741BF52BFD9F4E00EF492E /* SplashScreenViewController.swift in Sources */,
 				949F323B2BFC563600220FDC /* fruitJuiceRecomendationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
