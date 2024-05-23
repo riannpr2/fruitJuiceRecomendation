@@ -11,7 +11,8 @@ import SwiftUI
 struct fruitJuiceRecomendationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(classifier: ImageClassifier())
+            splashScreenPage()
+//            ContentView(classifier: ImageClassifier())
         }
     }
 }
