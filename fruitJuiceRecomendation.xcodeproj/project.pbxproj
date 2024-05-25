@@ -12,6 +12,8 @@
 		94741C012BFE04EF00EF492E /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741C002BFE04EF00EF492E /* Classifier.swift */; };
 		94741C052BFE056E00EF492E /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741C042BFE056E00EF492E /* ImageClassifier.swift */; };
 		94741C072BFE058C00EF492E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94741C062BFE058C00EF492E /* ImagePicker.swift */; };
+		9492F37D2C01639300232B29 /* sideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9492F37C2C01639300232B29 /* sideBar.swift */; };
+		9492F3832C0168F200232B29 /* TwoColumnMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9492F3822C0168F200232B29 /* TwoColumnMasterView.swift */; };
 		949F323B2BFC563600220FDC /* fruitJuiceRecomendationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F323A2BFC563600220FDC /* fruitJuiceRecomendationApp.swift */; };
 		949F323D2BFC563600220FDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F323C2BFC563600220FDC /* ContentView.swift */; };
 		949F323F2BFC563800220FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949F323E2BFC563800220FDC /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		94741C002BFE04EF00EF492E /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		94741C042BFE056E00EF492E /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 		94741C062BFE058C00EF492E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9492F37C2C01639300232B29 /* sideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBar.swift; sourceTree = "<group>"; };
+		9492F3822C0168F200232B29 /* TwoColumnMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnMasterView.swift; sourceTree = "<group>"; };
 		949F32372BFC563600220FDC /* fruitJuiceRecomendation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fruitJuiceRecomendation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949F323A2BFC563600220FDC /* fruitJuiceRecomendationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruitJuiceRecomendationApp.swift; sourceTree = "<group>"; };
 		949F323C2BFC563600220FDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,9 +109,11 @@
 		949F32492BFC573000220FDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9492F37C2C01639300232B29 /* sideBar.swift */,
 				949F324A2BFC57E200220FDC /* splashScreenPage.swift */,
 				949F324E2BFC584900220FDC /* mainCameraViewPage.swift */,
 				94741BF72BFDD16600EF492E /* showSheet.swift */,
+				9492F3822C0168F200232B29 /* TwoColumnMasterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,8 +190,10 @@
 			files = (
 				94741C012BFE04EF00EF492E /* Classifier.swift in Sources */,
 				94741C052BFE056E00EF492E /* ImageClassifier.swift in Sources */,
+				9492F37D2C01639300232B29 /* sideBar.swift in Sources */,
 				94741BF82BFDD16600EF492E /* showSheet.swift in Sources */,
 				949F323D2BFC563600220FDC /* ContentView.swift in Sources */,
+				9492F3832C0168F200232B29 /* TwoColumnMasterView.swift in Sources */,
 				949F324B2BFC57E200220FDC /* splashScreenPage.swift in Sources */,
 				94741BFD2BFDF0C100EF492E /* FruitClassification 2.mlmodel in Sources */,
 				949F324F2BFC584900220FDC /* mainCameraViewPage.swift in Sources */,

@@ -5,7 +5,6 @@
 //  Created by Henrian Pranata on 21/05/24.
 //
 
-    //codingan yang works
 
 import SwiftUI
 
@@ -13,10 +12,18 @@ struct ContentView: View {
     @State var isPresenting: Bool = true
     @State var uiImage: UIImage?
     @State var sourceType: UIImagePickerController.SourceType = .camera
+    @State private var recommendations: String?
     
     @ObservedObject var classifier: ImageClassifier
     
     var body: some View {
+        NavigationSplitView{
+            List(0..<10){ item in
+                Text("halo")
+            }
+        } detail: {
+            Text("Detail View")
+        }
         HStack{
             VStack{
                 Button(action: {
@@ -24,31 +31,32 @@ struct ContentView: View {
                         classifier.detect(uiImage: uiImage!)
                     }
                 }) {
-                    Image(systemName: "bolt.fill")
-                        .foregroundColor(.orange)
-                        .font(.title)
+//                    Image(systemName: "bolt.fill")
+//                        .foregroundColor(.orange)
+//                        .font(.title)
                 }
-                
                 
                 Group {
                     if let imageClass = classifier.imageClass {
                         HStack{
-                            Text("Image categories:")
+                            Text("Fruit Detected:")
                                 .font(.caption)
                             Text(imageClass)
                                 .bold()
+                            
                         }
                     } else {
                         HStack{
-                            Text("Image categories: NA")
+                            Text("Fruit Detected: Take a picture of the available fruit")
                                 .font(.caption)
                         }
                     }
                 }
                 .font(.subheadline)
                 .padding()
+                
             }
- 
+            Spacer()
 
     //batasnya
             
@@ -113,9 +121,24 @@ struct ContentView: View {
                 }
                 .padding()
     }
+    
+    private func recommendFruit(for fruit: String) -> String {
+            switch fruit.lowercased() {
+            case "apple":
+                return "Combine with: Banana, Orange"
+            case "banana":
+                return "Combine with: Apple, Strawberry"
+            case "orange":
+                return "Combine with: Apple, Mango"
+            default:
+                return "No recommendations available"
+            }
+        }
 }
 
 
 #Preview {
     ContentView(classifier: ImageClassifier())
 }
+
+
