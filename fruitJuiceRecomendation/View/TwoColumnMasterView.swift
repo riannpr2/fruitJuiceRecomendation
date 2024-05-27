@@ -11,10 +11,10 @@ struct TwoColumnMasterView: View {
     var body: some View {
         NavigationSplitView{
             List(0..<10){ item in
-                Text("halo")
+                Text("Fruit Combination")
             }
         } detail: {
-            Text("Detail View")
+            Text("How to make")
         }
     }
 }

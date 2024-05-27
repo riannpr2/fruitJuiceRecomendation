@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//TODO: dipake kah di app?
 struct sideBar: View {
     
     var body: some View {

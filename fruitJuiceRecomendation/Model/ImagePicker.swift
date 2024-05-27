@@ -50,7 +50,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 }
 
 
-
+//TODO: ini juga bisa dihapus mungkin
 //codingan sebelum diubah ubah
 
 //import SwiftUI

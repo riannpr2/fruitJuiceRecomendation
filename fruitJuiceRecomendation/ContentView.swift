@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-
+//TODO nama structnya jangan generic (diganti)
 struct ContentView: View {
     @State var isPresenting: Bool = true
     @State var uiImage: UIImage?
@@ -30,10 +30,9 @@ struct ContentView: View {
                     if uiImage != nil {
                         classifier.detect(uiImage: uiImage!)
                     }
-                }) {
-//                    Image(systemName: "bolt.fill")
-//                        .foregroundColor(.orange)
-//                        .font(.title)
+                }) 
+                {
+                    
                 }
                 
                 Group {
@@ -57,19 +56,8 @@ struct ContentView: View {
                 
             }
             Spacer()
+               
 
-    //batasnya
-            
-//            Spacer()
-            
-//bagian untuk memunculkan icon library/galery dan memilih gambar dari library
-            
-            //                Image(systemName: "photo")
-            //                    .onTapGesture {
-            //                        isPresenting = true
-            //                        sourceType = .photoLibrary
-            //                    }
-            
             
 //bagian untuk memunculkan icon camera dan jika di klik akan memunculkan kamera bawaannya
             
@@ -82,33 +70,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.blue)
             
-//bagian untuk menampilkan bingkai / rectangele (tidak dibutuhkan)
-            
-            //            Rectangle()
-            //                .strokeBorder()
-            //                .foregroundColor(.yellow)
-            
-//bagian untuk menampilkan gambar yang sudah di ambil ketika foto (tidak dibutuhkan)
-            //                .overlay(
-            //                    Group {
-            //                        if uiImage != nil {
-            //                            Image(uiImage: uiImage!)
-            //                                .resizable()
-            //                                .scaledToFill()
-            //                                .ignoresSafeArea()
-            //                        }
-            //                    }
-            //                )
-            
-            
-    //codingan yang works
         }
-    //batasnya
-        
-        
-        
-        
-    //codingan yang works
         
         .sheet(isPresented: $isPresenting) {
                     ImagePicker(uiImage: $uiImage, isPresenting: $isPresenting, sourceType: $sourceType)
@@ -121,7 +83,7 @@ struct ContentView: View {
                 }
                 .padding()
     }
-    
+//    TODO: kalo pake switch case gitu kayaknya ga scalable, lebih baik dijadiin model aja Fruit nya
     private func recommendFruit(for fruit: String) -> String {
             switch fruit.lowercased() {
             case "apple":
@@ -142,3 +104,40 @@ struct ContentView: View {
 }
 
 
+//                    Image(systemName: "bolt.fill")
+//                        .foregroundColor(.orange)
+//                        .font(.title)
+
+
+//batasnya
+        
+//            Spacer()
+        
+//bagian untuk memunculkan icon library/galery dan memilih gambar dari library
+        
+        //                Image(systemName: "photo")
+        //                    .onTapGesture {
+        //                        isPresenting = true
+        //                        sourceType = .photoLibrary
+        //                    }
+
+//bagian untuk menampilkan bingkai / rectangele (tidak dibutuhkan)
+            
+            //            Rectangle()
+            //                .strokeBorder()
+            //                .foregroundColor(.yellow)
+            
+//bagian untuk menampilkan gambar yang sudah di ambil ketika foto (tidak dibutuhkan)
+            //                .overlay(
+            //                    Group {
+            //                        if uiImage != nil {
+            //                            Image(uiImage: uiImage!)
+            //                                .resizable()
+            //                                .scaledToFill()
+            //                                .ignoresSafeArea()
+            //                        }
+            //                    }
+            //                )
+            
+            
+    //codingan yang works

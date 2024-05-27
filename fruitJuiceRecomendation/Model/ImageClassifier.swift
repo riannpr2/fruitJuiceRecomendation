@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//TODO: bedanya Classifier sama ImageClassifier apa ya? karena di sini juga at the end ngambil nya ke Classifier
 class ImageClassifier: ObservableObject {
     
     @Published private var classifier = Classifier()
